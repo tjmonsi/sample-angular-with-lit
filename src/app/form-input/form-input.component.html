@@ -1,0 +1,9 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label for="text">Text: </label>
+    <input id="text" type="text" formControlName="text">
+    <button type="submit">Submit</button>
+</form>
+
+<small-snackbar #snackbar (hide)="onHide($event)"></small-snackbar>
+
+{{afterText}}
